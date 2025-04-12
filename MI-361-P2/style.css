@@ -1,0 +1,141 @@
+:root {
+    --main-text-color: #123760;
+    --background-color: #FDFDFD;
+    --font: 'Poppins', Arial, sans-serif;
+    --navbar-font: 16px;
+    --brand-font: 32px;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+html {
+    background-color: var(--background-color);
+    color: var(--main-text-color);
+    font-family: var(--font);
+}
+
+.navbar {
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: var(--background-color);
+    border-bottom: 2px solid var(--main-text-color);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    margin-right: 25%;
+}
+
+.nav-links {
+    font-size: var(--navbar-font);
+    margin: 0 -4rem;
+    padding: 0 2rem;
+    width: 300px;
+}
+
+.brand h1 {
+    font-size: var(--brand-font);
+}
+
+#search-bar {
+    margin-left: 10px;
+}
+
+.main-content, .quick-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 20px;
+}
+
+.shop-categories {
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    min-height: 430px;
+    padding: 1rem;
+    align-items: center;
+}
+
+.slogan {
+    text-align: center;
+}
+
+#cookie-logo {
+    width: 30px;
+    height: auto;
+    margin-left: 15px;
+}
+
+#cookie-png {
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.quick-buttons {
+    gap: 1rem;
+}
+
+.cat-images {
+    max-width: 375px;
+    height: 300px;
+}
+
+#description {
+    font-style: italic;
+    font-weight: 300;
+    width: 40%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+.contact {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.contact p {
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+#about {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#about-desc {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+#thanks {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
